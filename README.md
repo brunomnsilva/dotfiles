@@ -63,5 +63,5 @@ Always commit your changes after making updates to your dotfiles structure or co
 ```bash
 git add .
 git commit -m "Updated [service name] configuration"
-git push -u origin master # Or your preferred branch
+git push origin master # Or your preferred branch
 ```
