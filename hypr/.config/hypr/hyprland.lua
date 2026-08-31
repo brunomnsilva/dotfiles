@@ -27,17 +27,22 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 
--- default workspace for windows
--- o.window("firefox", { workspace = "1" })
-o.window("Spotify", { workspace = "8"})
-o.window("chrome-web.whatsapp.com__-Default", { workspace = "9"})
+-- default workspaces
 
--- apps configuration
+-- o.window("firefox", { workspace = "1" })
+-- o.window("Spotify", { workspace = "8"})
+-- o.window("chrome-web.whatsapp.com__-Default", { workspace = "9"})
+
+-- app window modifications
+
 o.window({ tag = "floating-window-big" }, { float = true })
 o.window({ tag = "floating-window-big" }, { center = true })
 o.window({ tag = "floating-window-big" }, { size = { 1576, 997 } })
 
 o.window("org.gnome.Calculator", { tag = "+floating-window"})
+
+-- app window adjustments for larger screens
+
 o.window("Bitwarden", { tag = "+floating-window-big"})
 o.window("mpv", { tag = "+floating-window-big"})
 o.window("imv", { tag = "+floating-window-big"})
