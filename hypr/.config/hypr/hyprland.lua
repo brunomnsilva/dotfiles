@@ -37,7 +37,7 @@ require("default.hypr.toggles")
 
 o.window({ tag = "floating-window-big" }, { float = true })
 o.window({ tag = "floating-window-big" }, { center = true })
-o.window({ tag = "floating-window-big" }, { size = { 1576, 997 } })
+o.window({ tag = "floating-window-big" }, { size = { "monitor_w * 0.7", "monitor_h * 0.8" } })
 
 o.window("org.gnome.Calculator", { tag = "+floating-window"})
 
