@@ -47,5 +47,6 @@ o.window("Bitwarden", { tag = "+floating-window-big"})
 o.window("mpv", { tag = "+floating-window-big"})
 o.window("imv", { tag = "+floating-window-big"})
 o.window("org.omarchy.btop", { tag = "+floating-window-big"})
+o.window("org.gnome.Evince", { tag = "+floating-window-big"})
 
 
