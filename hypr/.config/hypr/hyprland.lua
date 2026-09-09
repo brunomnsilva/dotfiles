@@ -49,4 +49,24 @@ o.window("imv", { tag = "+floating-window-big"})
 o.window("org.omarchy.btop", { tag = "+floating-window-big"})
 o.window("org.gnome.Evince", { tag = "+floating-window-big"})
 
+-- File manager opens floating, centered at 70% x 50% of the monitor.
+-- Note: float/size/center are static effects (applied at window open), so this
+-- rule must float the window itself; it cannot react to a later float toggle.
+o.window(
+  { class = "org.gnome.Nautilus" },
+  {
+    float = true,
+    size = { "monitor_w * 0.7", "monitor_h * 0.5" },
+    center = true
+  }
+)
 
+-- Solaar GUI opens floating, centered as a square covering 50% of the monitor width.
+o.window(
+  { class = "solaar" },
+  {
+    float = true,
+    size = { "monitor_w * 0.5", "monitor_w * 0.5" },
+    center = true
+  }
+)

@@ -100,8 +100,8 @@ end
 -- Switch workspaces with mouse wheel
 -- hl.unbind("SUPER + mouse_down")
 -- hl.unbind("SUPER + mouse_up")
-hl.bind("CTRL + ALT + right", hl.dsp.focus({ workspace = "+1" }))
-hl.bind("CTRL + ALT + left",   hl.dsp.focus({ workspace = "-1" }))
+hl.bind("CTRL + SUPER + right", hl.dsp.focus({ workspace = "+1" }))
+hl.bind("CTRL + SUPER + left",   hl.dsp.focus({ workspace = "-1" }))
 
 
 -- PLUGINS
