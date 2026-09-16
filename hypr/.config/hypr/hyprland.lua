@@ -74,3 +74,5 @@ o.window(
 -- Always show a groupbar-style title strip on LibreOffice documents.
 o.window({ class = "^libreoffice-writer$" }, { group = "new" })
 o.window({ class = "^libreoffice-calc$" },   { group = "new" })
+o.window({ class = "^libreoffice-startcenter$" },   { group = "new" })
+

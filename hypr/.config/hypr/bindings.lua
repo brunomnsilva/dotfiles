@@ -114,7 +114,9 @@ o.bind(
 )
 
 -- Spotify
-o.bind("SUPER + CTRL + SHIFT + M", "Spotify Plugin", "omarchy-shell shell toggle quickshell.spotify")
+-- o.bind("SUPER + CTRL + SHIFT + M", "Spotify Plugin", "omarchy-shell shell toggle quickshell.spotify")
 
+-- File-Shelf
+o.bind("SUPER + D", "File Shelf", "omarchy-shell file-shelf toggle")
 
 
