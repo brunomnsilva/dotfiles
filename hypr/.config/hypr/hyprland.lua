@@ -49,6 +49,13 @@ o.window("imv", { tag = "+floating-window-big"})
 o.window("org.omarchy.btop", { tag = "+floating-window-big"})
 o.window("org.gnome.Evince", { tag = "+floating-window-big"})
 
+-- virt-viewer: full opacity + open silently on workspace 9.
+o.window("virt-viewer", {
+  tag = "-default-opacity",
+  opacity = "1 1",
+  workspace = "9 silent",
+})
+
 -- File manager opens floating, centered at 70% x 50% of the monitor.
 -- Note: float/size/center are static effects (applied at window open), so this
 -- rule must float the window itself; it cannot react to a later float toggle.
