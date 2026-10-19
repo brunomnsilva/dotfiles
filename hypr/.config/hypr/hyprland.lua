@@ -68,6 +68,13 @@ o.window(
   }
 )
 
+-- Blender's file browser opens floating at Omarchy's standard file-picker
+-- size (875 x 600), centered.
+o.window(
+  { class = "^blender$", initial_title = "^(File Browser)$" },
+  { tag = "+floating-window" }
+)
+
 -- Solaar GUI opens floating, centered as a square covering 50% of the monitor width.
 o.window(
   { class = "solaar" },

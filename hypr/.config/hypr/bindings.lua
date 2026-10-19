@@ -106,12 +106,12 @@ hl.bind("CTRL + SUPER + left",   hl.dsp.focus({ workspace = "-1" }))
 
 -- PLUGINS
 -- Mirador plugin binding
-hl.unbind("SUPER + TAB")
-o.bind(
-  "SUPER + TAB",
-  "Workspace overview",
-  "omarchy-shell shell toggle mirador '{}'"
-)
+-- hl.unbind("SUPER + TAB")
+-- o.bind(
+--   "SUPER + TAB",
+--   "Workspace overview",
+--   "omarchy-shell shell toggle mirador '{}'"
+-- )
 
 -- Spotify
 -- o.bind("SUPER + CTRL + SHIFT + M", "Spotify Plugin", "omarchy-shell shell toggle quickshell.spotify")
@@ -119,4 +119,13 @@ o.bind(
 -- File-Shelf
 o.bind("SUPER + D", "File Shelf", "omarchy-shell file-shelf toggle")
 
-
+-- fathom: begin
+do
+  local fathom = os.getenv("HOME") .. "/.config/omarchy/plugins/io.github.mtolhuys.fathom/hypr/fathom.lua"
+  local file = io.open(fathom, "r")
+  if file then
+    file:close()
+    pcall(dofile, fathom)
+  end
+end
+-- fathom: end
