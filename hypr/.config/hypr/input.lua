@@ -55,3 +55,8 @@
 -- Enable touchpad gestures for moving focus (helpful on scrolling layout).
 -- hl.gesture({ fingers = 3, direction = "left", action = function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end })
 -- hl.gesture({ fingers = 3, direction = "right", action = function() hl.dispatch(hl.dsp.focus({ direction = "r" })) end })
+-- BEGIN Trackpad Plus gestures
+-- {"original": "", "separator": "", "settings": {"distance": 300, "enabled": true, "fingers": 3, "fullscreen_up": false, "invert": true, "overview": false, "overview_provider": "trackpad-plus", "scratchpad_down": false}, "version": 8}
+hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
+hl.config({ gestures = { workspace_swipe_distance = 300, workspace_swipe_invert = true } })
+-- END Trackpad Plus gestures
