@@ -40,6 +40,7 @@ hl.unbind("SUPER + SHIFT + X") -- X
 hl.unbind("SUPER + SHIFT + ALT + A") -- Grok
 hl.unbind("SUPER + SHIFT + G") -- Signal
 hl.unbind("SUPER + SHIFT + ALT + G") -- Whatsapp
+hl.unbind("SUPER + SHIFT + M") -- Spotify (replace with sonora-bin)
 
 -- APPLICATIONS
 --
@@ -54,6 +55,7 @@ o.bind("SUPER + SHIFT + C", "Google Calendar", { webapp = "https://calendar.goog
 o.bind("SUPER + SHIFT + H", "Home Assistant", { webapp = "http://homeassistant.local:8123/dashboard-mushroom/0"})
 o.bind("SUPER + SHIFT + K", "Home Assistant", { webapp = "https://keep.google.com/"})
 o.bind("SUPER + SHIFT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
+o.bind("SUPER + SHIFT + M", "Sonora", { launch = "sonora"})
 
 
 -- TILING overrides
